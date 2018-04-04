@@ -44,6 +44,11 @@ var questions = [{
  question: "Recently, The Home Depot started a podcast exploring our company culture, what was it titled?",
   answers: ["Homer's Thoughts on life", "Give me an H", "A Day in the Life", "Built from Scratch"],
   correctAnswer: "Give me an H"
+}, {
+  question: "Which of the followingis NOT a typical way to amke donations?",
+  answers: ["Automatic Payroll Donation", "Check Donation", "Cash Donation", "Credit Card Donation"],
+  correctAnswer:"Cash Donation"
+}
 }];
 // Variable that will hold the setInterval
 var timer;
@@ -51,6 +56,7 @@ var game = {
   correct: 0,
   incorrect: 0,
   counter: 120,
+}
   countdown: function() {
     game.counter--;
     $("#counter-number").html(game.counter);
