@@ -44,6 +44,14 @@ var questions = [{
  question: "Recently, The Home Depot started a podcast exploring our company culture, what was it titled?",
   answers: ["Homer's Thoughts on life", "Give me an H", "A Day in the Life", "Built from Scratch"],
   correctAnswer: "Give me an H"
+}, {
+  question: "Which of the following is NOT a typical way to make donations?",
+  answers: ["Automation Payroll Donations", "Check Donation", "Cash Donation", "Credit Card Donation"],
+  correctAnswer: "Cash Donation"
+}, {
+  question: "How much of my donation goes to associates in need?",
+  answers: ["50%", "75%", "95%", "100%"],
+  correctAnswer: "100%"
 }];
 // Variable that will hold the setInterval
 var timer;
@@ -155,6 +163,22 @@ var game = {
     });
     $.each($("input[name='question-10']:checked"), function() {
       if ($(this).val() === questions[10].correctAnswer) {
+        game.correct++;
+      }
+      else {
+        game.incorrect++;
+      }
+    });
+    $.each($("input[name='question-11']:checked"), function() {
+      if ($(this).val() === questions[11].correctAnswer) {
+        game.correct++;
+      }
+      else {
+        game.incorrect++;
+      }
+    });
+    $.each($("input[name='question-12']:checked"), function() {
+      if ($(this).val() === questions[12].correctAnswer) {
         game.correct++;
       }
       else {
