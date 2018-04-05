@@ -21,7 +21,7 @@ var questions = [{
   answers: ["Respect for yourself", "Doing the right thing", "Excellent Customer Service", "Building strong relationships"],
   correctAnswer: "Respect for yourself"
 }, {
-  question: "When dis The Home Depot adopt Homer D. Poe as the company mascot",
+  question: "When did The Home Depot adopt Homer D. Poe as the company mascot",
   answers: [1978, 1981, 1985, 1990],
   correctAnswer: "1981"
 }, {
